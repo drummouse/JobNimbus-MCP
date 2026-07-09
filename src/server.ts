@@ -7,8 +7,9 @@ const BASE_URL = "https://app.jobnimbus.com/api1";
 
 // Read at call time (not import time) so the serverless entry point can import
 // this module without killing the process when env validation fails.
+// JN_New_API is accepted as an alternate variable name.
 function apiKey(): string {
-  const key = process.env.JOBNIMBUS_API_KEY ?? "";
+  const key = process.env.JOBNIMBUS_API_KEY ?? process.env.JN_New_API ?? "";
   if (!key) throw new Error("JOBNIMBUS_API_KEY environment variable is required");
   return key;
 }

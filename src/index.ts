@@ -3,7 +3,7 @@ import { createServer } from "./server.js";
 
 // ─── Stdio entry point (local Claude Desktop / CLI usage) ────────────────────
 
-if (!process.env.JOBNIMBUS_API_KEY) {
+if (!process.env.JOBNIMBUS_API_KEY && !process.env.JN_New_API) {
   process.stderr.write("Error: JOBNIMBUS_API_KEY environment variable is required\n");
   process.exit(1);
 }
