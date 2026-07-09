@@ -9,7 +9,7 @@ const BASE_URL = "https://app.jobnimbus.com/api1";
 // this module without killing the process when env validation fails.
 // JN_New_API is accepted as an alternate variable name.
 function apiKey(): string {
-  const key = process.env.JOBNIMBUS_API_KEY ?? process.env.JN_New_API ?? "";
+  const key = process.env.JN_New_API ?? process.env.JOBNIMBUS_API_KEY ?? "";
   if (!key) throw new Error("JOBNIMBUS_API_KEY environment variable is required");
   return key;
 }
