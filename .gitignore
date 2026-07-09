@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+.vercel/
+desktop.ini
+*.zip
+
+.vercel
+.env*

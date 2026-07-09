@@ -48,7 +48,7 @@ or `%APPDATA%\Claude\claude_desktop_config.json` (Windows):
       "command": "node",
       "args": ["/FULL/PATH/TO/jobnimbus-mcp/dist/index.js"],
       "env": {
-        "JOBNIMBUS_API_KEY": "mqalwrda6zbamv2x"
+        "JOBNIMBUS_API_KEY": "your-jobnimbus-api-key"
       }
     }
   }
